@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1>Hello {{person.name}},</h1>
+    {% comment %} <p>Thank you for visiting our page<p>
+    <p>We at {{person.company}} make it easy for you to move</p>
+    Some of the services we offer include:
+    {% for service in services  %}
+    <li>{service}</li>
+    {% end for %}
+    {% if perosn.gender is female %}
+    <h2>Thank you senorita</h2>
+    {% elif person.gender is male %}
+    <h2>Thank you senora</h2>
+    {% else %}
+    <h2>Thank you</h2>
+    {% endif %} {% endcomment %}
+  </body>
+</html>
